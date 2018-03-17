@@ -1,9 +1,12 @@
 
-public class Card {
-	public Integer value;
+public abstract class Card<Value> {
+	private Value value;
 	
-	public Card(int newValue) {
+	public Card(Value newValue) {
 		value = newValue;
 	}
-	
+
+	public Value getType() {
+		return value;
+	}
 }
