@@ -1,14 +1,13 @@
 package jacards.card;
 
-public abstract class Card<Value> implements Valueable<Value> {
-	private Value value;
+public abstract class Card {
+	private CardValue value;
 	
-	public Card(Value newValue) {
+	public Card(CardValue newValue) {
 		value = newValue;
 	}
 
-	@Override
-	public Value getValue() {
+	public CardValue getValue() {
 		return value;
 	}
 }
