@@ -1,3 +1,4 @@
+package jacards.card;
 
 public abstract class Card<Value> {
 	private Value value;
