@@ -1,36 +1,32 @@
 package jacards.card;
-import java.util.Vector;
+import java.util.LinkedList;
 import java.util.Collections;
 
 
 public class Deck {
-	private Vector<Card> deckList; 
+	private LinkedList<Card> deckList; 
 	
-	public Deck(Vector<Card> newList) throws Exception {
-		if(newList.isEmpty())
-			throw new Exception("Deck must not be empty");
+	public Deck(LinkedList<Card> newList) {
 		deckList = newList;
 	}
 	
 	public Card FirstCard() {
-		return deckList.firstElement();
+		return deckList.getFirst();
 	}
 	
 	public Card DrawCard() {
-		Card firstCard = FirstCard();
-		RemoveCards(1);
-		return firstCard;
+		return deckList.pop();
 	}
 	
-	public void ShuffleDeck() {
+	public void ShuffleDeck() throws Exception {
+		if(deckList.isEmpty())
+			throw new Exception("You can't shuffle an empty deck");
+			
 		Collections.shuffle(deckList);
 	}
 	
-	private void RemoveCards(int Number) {
-		while(Number > 0) {
-			deckList.remove(0);
-			Number--;
-		}
+	public void AddCard(Card newCard) {
+		deckList.add(newCard);
 	}
 	
 	
