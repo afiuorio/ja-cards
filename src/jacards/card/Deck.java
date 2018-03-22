@@ -18,15 +18,12 @@ public class Deck {
 		return deckList.pop();
 	}
 	
-	public void ShuffleDeck() throws Exception {
-		if(deckList.isEmpty())
-			throw new Exception("You can't shuffle an empty deck");
-			
+	public void ShuffleDeck() {
 		Collections.shuffle(deckList);
 	}
 	
 	public void AddCard(Card newCard) {
-		deckList.add(newCard);
+		deckList.addFirst(newCard);
 	}
 	
 	
