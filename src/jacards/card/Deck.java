@@ -22,8 +22,12 @@ public class Deck {
 		Collections.shuffle(deckList);
 	}
 	
-	public void AddCard(Card newCard) {
+	public void AddCardTop(Card newCard) {
 		deckList.addFirst(newCard);
+	}
+	
+	public void AddCardBottom(Card newCard) {
+		deckList.addLast(newCard);
 	}
 	
 	
