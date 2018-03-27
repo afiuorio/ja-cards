@@ -1,4 +1,4 @@
-package jacards.card;
+package main.java.jacards.card;
 
 public abstract class Card {
 	private CardValue value;
