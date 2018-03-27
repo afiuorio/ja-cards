@@ -1,4 +1,4 @@
-package jacards.card;
+package main.java.jacards.card;
 import java.util.LinkedList;
 import java.util.Collections;
 
