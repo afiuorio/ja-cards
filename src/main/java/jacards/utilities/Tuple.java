@@ -1,4 +1,4 @@
-package main.java.jacards.utilities;
+package jacards.utilities;
 
 public class Tuple<X, Y> {
 	

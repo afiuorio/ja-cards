@@ -1,4 +1,4 @@
-package main.java.jacards.deck;
+package jacards.deck;
 
 public interface DeckFactory {
 	public Deck<?> createDeck();

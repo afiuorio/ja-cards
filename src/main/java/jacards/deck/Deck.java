@@ -1,4 +1,4 @@
-package main.java.jacards.deck;
+package jacards.deck;
 
 import java.util.LinkedList;
 import java.util.Collections;

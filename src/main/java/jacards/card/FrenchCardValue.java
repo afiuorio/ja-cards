@@ -1,6 +1,6 @@
-package main.java.jacards.card;
+package jacards.card;
 
-import main.java.jacards.utilities.Tuple;
+import jacards.utilities.Tuple;
 
 public class FrenchCardValue extends Tuple<FrenchSeed, Integer> implements CardValue {
 	

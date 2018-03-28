@@ -1,4 +1,4 @@
-package main.java.jacards.exception;
+package jacards.exception;
 
 public class WrongFormatException extends Exception {
 	

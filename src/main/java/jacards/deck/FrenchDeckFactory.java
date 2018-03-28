@@ -1,9 +1,9 @@
-package main.java.jacards.deck;
+package jacards.deck;
 
-import main.java.jacards.card.FrenchCard;
-import main.java.jacards.card.FrenchCardValue;
-import main.java.jacards.card.FrenchSeed;
-import main.java.jacards.exception.WrongFormatException;
+import jacards.card.FrenchCard;
+import jacards.card.FrenchCardValue;
+import jacards.card.FrenchSeed;
+import jacards.exception.WrongFormatException;
 
 public class FrenchDeckFactory implements DeckFactory{
 	
