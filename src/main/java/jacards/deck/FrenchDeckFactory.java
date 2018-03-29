@@ -10,7 +10,7 @@ public class FrenchDeckFactory implements DeckFactory{
 	private int format;
 	
 	public FrenchDeckFactory(int newFormat) throws WrongFormatException {
-		if(newFormat!=40 || newFormat!=52)
+		if(newFormat!=40 && newFormat!=52)
 			throw new WrongFormatException("Enter 40 or 52 to select a format for a french deck");
 		format=newFormat;
 	}
